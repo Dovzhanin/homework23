@@ -34,12 +34,16 @@ console.log(str = str1);
 
 //завдання 3
 
-var str = "Я люблю маму, тата, брата і маму і бабу і діда і маму";
+
+var strin = "Я люблю маму, тата, брата і маму і бабу і діда і маму";
+var words = ["маму", "тата", "брата"];
+
+var ReapleseWords = function (str, str5) {
+
 var str1 = str;
 var str2;
 var str_length;
 var str4 = "";
-var str5 = ["маму", "тата", "брата"];
 
 str5.forEach(function(item, j, arr) {
     str4 = "";
@@ -59,3 +63,7 @@ str5.forEach(function(item, j, arr) {
 
     }
 });
+return str
+}
+
+console.log (ReapleseWords(strin, words));
